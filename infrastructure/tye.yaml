@@ -1,0 +1,21 @@
+name: restaurant
+network: restaurant
+extensions:
+  - name: dapr
+    log-level: debug
+    components-path: "./dapr/components/"
+
+#  - name: zipkin
+services:
+  - name: menu-servioce
+    project: ../backend/Services/Menu/Menu.Api/Menu.Api.csproj
+    bindings:
+      - port: 5010
+        containerPort: 80
+        name: http
+
+  - name: redis
+    image: redis
+    bindings:
+      - port: 6379
+        connectionString: "${host}:${port}"
