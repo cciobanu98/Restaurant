@@ -6,10 +6,10 @@ spec:
   releaseName: dapr
   chart:
     spec:
-      chart: dapr
+      chart: dapr/dapr
       sourceRef:
         kind: HelmRepository
-        name: dapr/dapr
+        name: dapr
         namespace: dapr-system
       version: "1.6"
   interval: 1h0m0s
