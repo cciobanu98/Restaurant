@@ -5,7 +5,6 @@ extensions:
     log-level: debug
     components-path: "./dapr/components/"
 
-#  - name: zipkin
 services:
   - name: menu-servioce
     project: ../backend/Services/Menu/Menu.Api/Menu.Api.csproj
