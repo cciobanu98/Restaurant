@@ -12,14 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Configure Git
-        run: |
-          git config user.name "$GITHUB_ACTOR"
-          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-
-      - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.1.0
+      - name: Publish Helm chart
+        uses: stefanprodan/helm-gh-pages@master
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           charts_dir: infrastructure/deployment/menu
-        env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          branch: gh-pages
+          commit_username: cciobanu
+          commit_email: cristian.ciobanu1998@gmail.com
