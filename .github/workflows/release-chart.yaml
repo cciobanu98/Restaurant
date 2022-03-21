@@ -16,7 +16,4 @@ jobs:
         uses: stefanprodan/helm-gh-pages@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          charts_dir: infrastructure/deployment/menu
-          branch: gh-pages
-          commit_username: cciobanu
-          commit_email: cristian.ciobanu1998@gmail.com
+          charts_dir: infrastructure/deployment/
