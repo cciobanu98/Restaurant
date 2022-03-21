@@ -3,12 +3,12 @@ entries:
   menu:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2022-03-21T13:56:36.88322793Z"
+    created: "2022-03-21T14:23:12.926005058Z"
     description: A Helm chart for Kubernetes
-    digest: fc757ccbe4a5327e249e3275867a409e6e6569b28555ded1b863c302e1963bd9
+    digest: 18eb2e36f5b44a58fd1caaf735607c5ccdd8329031b89a69ec46f19896835574
     name: menu
     type: application
     urls:
     - https://cciobanu98.github.io/Restaurant/menu-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-21T13:56:36.882448354Z"
+generated: "2022-03-21T14:23:12.925218448Z"
