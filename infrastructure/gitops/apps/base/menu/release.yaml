@@ -27,4 +27,3 @@ spec:
       dapr.io/enabled: "true"
       dapr.io/app-id: "menu"
       dapr.io/app-port: "80"
-      dapr.io/config: "tracing"
