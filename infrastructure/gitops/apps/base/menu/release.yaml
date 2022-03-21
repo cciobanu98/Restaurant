@@ -20,7 +20,7 @@ spec:
     cache: redis-master.redis:6379
     ingress:
       enabled: true
-      annotations:
+      podAnnotations:
         dapr.io/enabled: "true"
         dapr.io/app-id: "nodeapp"
         dapr.io/app-port: "80"
